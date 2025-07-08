@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Component 2</title>
+  <link rel="stylesheet" href="component2.css" />
+</head>
+<body>
+  <div class="wifi-card">
+    <h2 class="section-title">2.4 GHz</h2>
+    <div class="divider"></div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="wifi-name">Wi-Fi Name</label>
+        <input type="text" id="wifi-name" value="Wi-Fi Default" />
+      </div>
+      <div class="form-group password-group">
+        <label for="wifi-password">Wi-Fi Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="wifi-password" value="password" />
+          <span class="eye-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#8a9bb6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <a class="advanced-settings">
+      Advanced Settings
+      <span class="chevron-up">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#bac5d1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 15 12 9 18 15" />
+        </svg>
+      </span>
+    </a>
+
+    <div class="advanced-panel">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="ssid-number">SSID Number</label>
+          <div class="select-wrapper">
+            <select id="ssid-number">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+            <div class="chevron-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#8a9bb6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="auth">Authentication</label>
+          <div class="select-wrapper">
+            <select id="auth">
+              <option>WPA / WPA2</option>
+            </select>
+            <div class="chevron-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#8a9bb6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="encryption">Encryption Mode</label>
+          <div class="select-wrapper">
+            <select id="encryption">
+              <option>TKIP & AES</option>
+            </select>
+            <div class="chevron-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#8a9bb6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="wpa-interval">WPA Key Interval</label>
+          <input type="text" id="wpa-interval" value="3600" />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
